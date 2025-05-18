@@ -5,6 +5,8 @@ devices:
       connection_time: __CONNECTIONTIME__ # delay after connection (s) (optional, default: 0)
     listen:
       bind: 0:__LISTENPORT__ # listening address (mandatory)
+    unit_id_remapping: 
+      __UNITIDREMAPPING__ # remap/forward unit IDs (optional, empty by default)
 logging:
   version: 1
   formatters:
