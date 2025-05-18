@@ -15,7 +15,7 @@ CONFIG_LOGLEVEL=$(bashio::config 'loglevel')
 echo "Preparing to run modbus-proxy"
 echo "Upstream: $CONFIG_HOST:$CONFIG_PORT"
 echo "Listen: $CONFIG_LISTENPORT"
-echo "UnitID Remapping: $UNITIDREMAPPING"
+echo "UnitID Remapping: $CONFIG_UNITIDREMAPPING"
 echo "Timeout: $CONFIG_TIMEOUT"
 echo "Connection Time: $CONFIG_CONNECTIONTIME"
 echo "Loglevel: $CONFIG_LOGLEVEL"
