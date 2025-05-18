@@ -6,7 +6,7 @@ set +x
 CONFIG_HOST=$(bashio::config 'upstreamhost')
 CONFIG_PORT=$(bashio::config 'upstreamport')
 CONFIG_LISTENPORT=$(bashio::config 'listenport')
-CONFIG_UNITIDREMAPPING=$(bahio::config 'unitid_remapping'
+CONFIG_UNITIDREMAPPING=$(bahio::config 'unitid_remapping')
 CONFIG_TIMEOUT=$(bashio::config 'timeout')
 CONFIG_CONNECTIONTIME=$(bashio::config 'connection_time')
 CONFIG_LOGLEVEL=$(bashio::config 'loglevel')
