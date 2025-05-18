@@ -1,5 +1,5 @@
 {
-  "name": "Modbus Proxy Repository",
-  "url": "https://github.com/Akulatraxas/ha-modbusproxy",
-  "maintainer": "Julian Jost <julian@jost-online.eu>"
+  "name": "Modbus Proxy with ID-Mapping Repository",
+  "url": "https://github.com/edomi-fan/ha-modbusproxy_id-mapping",
+  "maintainer": "edomi-fan"
 }
