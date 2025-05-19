@@ -11,10 +11,10 @@ url: "https://community.home-assistant.io/t/updated-solaredge-modbus-full-setup-
 startup: services
 init: false
 options:
-  upstreamhost: "192.168.178.74"
+  upstreamhost: "192.168.188.26"
   upstreamport: 502
   listenport: 502
-  unitid_remapping: ""
+  unitid_remapping: "2: 240"
   connection_time: 0.1
   timeout: 10
   loglevel: "INFO"
@@ -27,4 +27,4 @@ schema:
   timeout: int
   loglevel: list(INFO|DEBUG|ERROR)
 ports:
-  502/tcp: 502
+  502/tcp: 5021
