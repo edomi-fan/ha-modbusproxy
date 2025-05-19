@@ -189,6 +189,7 @@ class ModBus(Connection):
             reply = bytearray(reply)
             reply[6] = new_uid
             self.log.debug("remapping unit ID %s to %s in reply", uid, new_uid)
+            new_uid = uid
         return reply
 
     async def handle_client(self, reader, writer):
