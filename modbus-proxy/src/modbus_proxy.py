@@ -174,7 +174,7 @@ class ModBus(Connection):
 
     def _transform_request(self, request):
         uid = request[6]
-        new_uid = self.unit_id_remapping.setdefault(uid, uid)
+        new_uid = self.unit_id_remapping.setdefault(uid, uid).copy
         if uid != new_uid:
             request = bytearray(request)
             request[6] = new_uid
@@ -184,7 +184,7 @@ class ModBus(Connection):
     def _transform_reply(self, reply):
         uid = reply[6]
         inverse_unit_id_map = {v: k for k, v in self.unit_id_remapping.items()}
-        new_uid = inverse_unit_id_map.setdefault(uid, uid)
+        new_uid = inverse_unit_id_map.setdefault(uid, uid).copy
         if uid != new_uid:
             reply = bytearray(reply)
             reply[6] = new_uid
